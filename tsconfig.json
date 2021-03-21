@@ -1,0 +1,53 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "allowJs": true,
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "allowSyntheticDefaultImports": true,
+      "target": "es5",
+      "jsx": "react",
+      "experimentalDecorators": true,
+      "lib": [
+        "es5",
+        "es2017",
+        "dom",
+        "scripthost"
+      ],
+      "paths": {
+        "@http": [
+          "./src/common/utils/ajax.ts",
+        ],
+        "@containers/*": [
+          "./src/containers/*"
+        ],
+        "@store/*": [
+          "./src/store/*"
+        ],
+        "@common/*": [
+          "./src/common/*"
+        ],
+        "@components/*": [
+          "./src/components/*"
+        ],
+        "@source/*": [
+          "./src/source/*"
+        ],
+        "@pipe/*": [
+          "./src/pipe/*"
+        ],
+        "@router/*": [
+          "./src/router/*"
+        ]
+      }
+    },
+    "include": [
+      "./src/*"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
